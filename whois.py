@@ -21,7 +21,7 @@ def check_command_line_args():
         print("You must pass 1 argument as a domain: python whois.py google.com")
         exit(1)
 
-def get_domain_on_args():
+def get_domain_on_args() -> str:
     """
     Obtém o domínio via argumentos da linha de comando
     """
@@ -29,7 +29,8 @@ def get_domain_on_args():
     domain = sys.argv[domain_arg_index]
     if domain == "":
         print("You must pass 1 argument as a domain: python whois.py google.com")
-        exit(1)    
+        exit(1)
+    return domain
 
 def get_whois_page(domain: str) -> str:
     """
