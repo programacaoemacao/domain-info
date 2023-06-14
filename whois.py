@@ -68,5 +68,3 @@ if __name__ ==  "__main__":
     except Exception as e:
         print(f"Something wrong while processing whois consult to {domain}: {e}")
         exit(1)
-        
-        
